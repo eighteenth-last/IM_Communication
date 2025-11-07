@@ -1,5 +1,5 @@
 server:
-  port: 8090
+  port: 8091
 
 logging:
   config: classpath:logback-config.xml
@@ -9,8 +9,8 @@ logging:
 
 spring:
   application:
-    name: Web-Auth
-  
+    name: Web-File
+
   cloud:
     nacos:
       discovery:
@@ -21,4 +21,3 @@ spring:
       config:
         import-check:
           enabled: false  # 禁用配置导入检查
-

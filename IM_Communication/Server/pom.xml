@@ -18,6 +18,7 @@
         <module>Server-Chat-Common</module>
         <module>Server-Chat-Model</module>
         <module>Server-Chat-Web</module>
+        <module>Server-Gateway</module>
     </modules>
 
     <properties>
@@ -26,6 +27,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <cloud.version>2022.0.3</cloud.version>
         <aliyun.cloud.version>2022.0.0.0</aliyun.cloud.version>
+        <lombok.version>1.18.34</lombok.version>
     </properties>
 
     <dependencyManagement>
@@ -54,6 +56,11 @@
                 <version>${aliyun.cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

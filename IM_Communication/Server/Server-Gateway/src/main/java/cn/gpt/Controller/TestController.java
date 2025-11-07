@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     @GetMapping
     public Response test() {
-        return Response.fail("1314520","测试一下");
-//        return Response.success("Hello from Gateway!");
+        Response.fail("1314520","测试一下");
+        return Response.success("Hello from Gateway!");
     }
 }

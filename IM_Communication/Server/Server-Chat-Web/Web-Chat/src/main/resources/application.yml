@@ -1,5 +1,5 @@
 server:
-  port: 8090
+  port: 8092
 
 logging:
   config: classpath:logback-config.xml
@@ -9,8 +9,8 @@ logging:
 
 spring:
   application:
-    name: Web-Auth
-  
+    name: Web-Chat
+
   cloud:
     nacos:
       discovery:
